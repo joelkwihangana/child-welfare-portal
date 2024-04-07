@@ -35,6 +35,25 @@ function App() {
       <Routes>
         <Route
           index
+          // path="/signin"
+          element={
+            <>
+              <PageTitle title="Signin" />
+              <SignIn />
+            </>
+          }
+        />
+        <Route
+          path="/signup"
+          element={
+            <>
+              <PageTitle title="Signup" />
+              <SignUp />
+            </>
+          }
+        />
+        <Route
+          path="/dashboard"
           element={
             <>
               <PageTitle title="eCommerce Dashboard" />
@@ -120,24 +139,6 @@ function App() {
             <>
               <PageTitle title="Buttons" />
               <Buttons />
-            </>
-          }
-        />
-        <Route
-          path="/auth/signin"
-          element={
-            <>
-              <PageTitle title="Signin" />
-              <SignIn />
-            </>
-          }
-        />
-        <Route
-          path="/auth/signup"
-          element={
-            <>
-              <PageTitle title="Signup" />
-              <SignUp />
             </>
           }
         />
